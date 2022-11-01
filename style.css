@@ -1,3 +1,16 @@
+@font-face{
+  font-family: Pensum;
+  src: url(pensum.otf);
+  font-display: swap;
+}
+
+@font-face{
+  font-family: Pensum;
+  src: url(pensum bold.otf);
+  font-display: swap;
+  font-weight: 900;
+}
+
 .nav {
   display: flex;
   flex-direction: row-reverse;
@@ -54,6 +67,7 @@ a:hover {
 
 .wrapper{
   display: flex;
+  justify-content:center;
 }
 
 .wrapper>*{
@@ -62,4 +76,30 @@ a:hover {
 
 body{
   margin:0;
+  font-family: Pensum;
+}
+
+.girl{
+  background-color:burlywood;
+  height: 500px;
+  width:500px;
+  background-image: url(image.svg);
+  background-position: center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  border-radius: 0 0 0 150px;
+}
+
+@media(max-width: 600px) {
+  .wrapper{
+    flex-direction: column-reverse;
+  }
+
+  .wrapper>*{
+    width:100%;
+  }
+
+  .girl {
+    border-radius: 0;
+  }
 }
