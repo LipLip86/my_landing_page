@@ -66,6 +66,14 @@ button:hover{
   width: 90px;
   color: black;
   border:1px solid transparent;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.wrapper .button:hover {
+  background-color: transparent;
+  transition: 0.4s;
+  border: 1px solid black;
 }
 
 a {
